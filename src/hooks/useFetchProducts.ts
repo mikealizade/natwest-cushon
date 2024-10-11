@@ -15,9 +15,6 @@ export const useFetchProducts = (url: string) => {
     const fetchData = async () => {
       try {
         const response = await fetch(url);
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
         const data: Product[] = await response.json();
         setProducts(data);
       } catch (error: any) {

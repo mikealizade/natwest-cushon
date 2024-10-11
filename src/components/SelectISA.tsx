@@ -19,25 +19,23 @@ export const SelectISA = ({
   selectedId,
 }: SelectISAProps): JSX.Element => {
   return (
-    <>
-      <div className="flex flex-col gap-y-6 flex-1">
-        <>
-          <h3 className="text-subHeader text-lg">Please select an ISA.</h3>
-          <Products
-            products={products}
-            onSelectProdId={onSelectProdId}
-            selectedId={selectedId}
-          />
-          <button
-            className={btnClass}
-            type="button"
-            disabled={isDisabled}
-            onClick={onEnableAmount}
-          >
-            Select ISA
-          </button>
-        </>
-      </div>
-    </>
+    <div className="flex flex-col gap-y-6 flex-1">
+      <>
+        <h3 className="text-subHeader text-lg">Please select an ISA.</h3>
+        <Products
+          products={products}
+          onSelectProdId={onSelectProdId}
+          selectedId={selectedId}
+        />
+        <button
+          className={btnClass}
+          type="button"
+          disabled={isDisabled}
+          onClick={onEnableAmount}
+        >
+          Select ISA
+        </button>
+      </>
+    </div>
   );
 };

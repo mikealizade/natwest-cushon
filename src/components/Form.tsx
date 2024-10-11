@@ -79,19 +79,6 @@ export const Form = (): JSX.Element => {
     <section className="flex flex-col gap-y-4 bg-secondary rounded-[30px] p-[60px] pt-[40px] m-4">
       <h2 className="text-xl2">Select your ISA</h2>
       <Messages message={String(message)} hasSavedData={hasSavedData} />
-
-      <>
-        {/* Could use a global error provider */}
-        {/* {message && typeof message === "string" && (
-          <p className="p-2 px-4 bg-green-200 rounded-lg text-lg">{message}</p>
-        )}
-        {hasSavedData && (
-          <p className="text-lg">
-            Welcome back! Here are your previously saved selections.
-          </p>
-        )} */}
-      </>
-
       {(loading || postLoading) && <Loader />}
       {(error || postError) && <Error error={error || postError} />}
 

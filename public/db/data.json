@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Diversified Fund",
+    "isActive": false
+  },
+  {
+    "id": 2,
+    "name": "Cushon Equities Fund",
+    "isActive": true
+  },
+  {
+    "id": 3,
+    "name": "TrueIndex Fund",
+    "isActive": false
+  }
+]
